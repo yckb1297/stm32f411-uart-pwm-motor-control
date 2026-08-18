@@ -276,29 +276,3 @@ void Main(void)
 }	
 
 #endif
-
-#if 0
-
-void Main(void)
-{
-	Sys_Init(115200);
-	printf("TIM2 stopwatch test\n");
-
-	int i;
-
-	for(i = 1; i <= 10; i++)
-	{
-		i % 2 ? LED_On() : LED_Off();
-
-		TIM2_Stopwatch_Start();
-		SysTick_Run(100 * i);
-		while(!SysTick_Check_Timeout());
-		SysTick_Stop();
-
-		unsigned int r = TIM2_Stopwatch_Stop();
-
-		printf("[%d] Elapsed Time = %f msec\n", i, r/1000.);
-	}
-}
-
-#endif

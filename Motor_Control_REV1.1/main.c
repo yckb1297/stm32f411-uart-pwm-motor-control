@@ -50,7 +50,7 @@ void Main(void)
 	/* Interrupt Enable */
 	Key_ISR_Enable(1);					//Key Rising/Fallind Edge INT
 	Uart2_RX_Interrupt_Enable();		//Uart RX INT Enable
-	//TIM2, TIM4는 타이머 실행 함수에 INT를 함께 허용해놓아서 다로 Enable함수를 호춣하지 않음.
+	//TIM2, TIM4는 타이머 실행 함수에 INT를 함께 허용해놓아서 따로 Enable함수를 호출하지 않음.
 
 	TIM5_PWM_Generation(curr_motor_speed);	//PWM 기본 duty 설정: 70
 	
