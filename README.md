@@ -1,5 +1,5 @@
 # stm32f411-uart-pwm-motor-control
-STM32F411 motor controller: Duty cycle control via UART interrupts &amp; direction/state control via GPIO buttons
+> STM32F411 motor controller: Duty cycle control via UART interrupts &amp; direction/state control via GPIO button
 
 # STM32F411 DC Motor Control System (REV 1.3)
 
