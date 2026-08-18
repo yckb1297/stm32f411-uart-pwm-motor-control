@@ -7,14 +7,14 @@ STM32F411 motor controller: Duty cycle control via UART interrupts &amp; directi
 
 ---
 ## 📑 목차 (Table of Contents)
-- [1. 개발 환경 및 기술 스택](#-개발-환경-및-기술-스택)
-- [2. 주요 기능 및 설계 특징](#-주요-기능-및-설계-특징)
-- [3. 하드웨어 핀 맵 (Pin Map)](#-하드웨어-핀-맵-pin-map)
-- [4. 모터 상태 전이 시나리오 (State Machine)](#-모터-상태-전이-시나리오-state-machine)
-- [5. 파일 구조 및 역할](#-파일-구조-및-역할)
-- [6. 주요 트러블슈팅 & 문제 해결 (Troubleshooting)](#-주요-트러블슈팅--문제-해결-troubleshooting)
-- [7. REV 1.3 주요 변경 사항](#-rev-13-주요-변경-사항)
-- [8. TODO (향후 개선 사항)](#-todo-향후-개선-사항)
+- [1. 개발 환경 및 기술 스택](#개발-환경-및-기술-스택)
+- [2. 주요 기능 및 설계 특징](#주요-기능-및-설계-특징)
+- [3. 하드웨어 핀 맵 (Pin Map)](#하드웨어-핀-맵-pin-map)
+- [4. 모터 상태 전이 시나리오 (State Machine)](#모터-상태-전이-시나리오-state-machine)
+- [5. 파일 구조 및 역할](#파일-구조-및-역할)
+- [6. 주요 트러블슈팅 및 문제 해결 (Troubleshooting)](#주요-트러블슈팅-및-문제-해결-troubleshooting)
+- [7. REV 1.3 주요 변경 사항](#rev-13-주요-변경-사항)
+- [8. 향후 개선 사항](#향후-개선-사항)
 
 ---
 
@@ -133,3 +133,6 @@ Macro_Write_Block(TIM2->CR1, 0x7, 0x7, 2);  // down count, one pulse, URS
 ## 향후 개선 사항
 
 - 속도 테이블 범위를 벗어난 UART 입력에 대한 예외 처리/로그
+
+
+[맨 위로 이동](#stm32f411-dc-motor-control-system-rev-13)
